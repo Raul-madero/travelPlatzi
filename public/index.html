@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Platzi Travel</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/tailwind.css">
+</head>
+<body class="font-Montserrat dark:bg-gray-900">
+    <nav class="w-full h-16 hidden bg-white lg:flex lg:flex-row items-center justify-between p-5 dark:bg-gray-800">
+            <p class="text-xl text-primary font-bold dark:text-white">Platzi Travel</p>
+        </div>
+        <div class="w-6/12 h-auto flex justify-evenly ">
+            <a class="font-bold text-base text-primary dark:text-white" href="#home">Ubicaciones</a>
+            <a class="font-bold text-base text-primary dark:text-white" href="#recomendados">Estancias</a>
+            <a class="font-bold text-base text-primary dark:text-white" href="#faqs">FAQS</a>
+            <a class="font-bold text-base text-primary dark:text-white" href="#home">Acerca de</a>
+        </div>
+        <div class="w-2/12 h-auto flex justify-between">
+            <svg width="30" height="30" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="dark:text-white dark:fill-current" fill-rule="evenodd" clip-rule="evenodd" d="M9.91667 0.875C4.92309 0.875 0.875 4.92309 0.875 9.91667C0.875 14.9102 4.92309 18.9583 9.91667 18.9583C11.9476 18.9583 13.8221 18.2887 15.3316 17.1582L20.6284 22.4551C21.1328 22.9595 21.9507 22.9595 22.4551 22.4551C22.9595 21.9507 22.9595 21.1328 22.4551 20.6284L17.1582 15.3316C18.2887 13.8221 18.9583 11.9476 18.9583 9.91667C18.9583 4.92309 14.9102 0.875 9.91667 0.875ZM3.45833 9.91667C3.45833 6.34983 6.34983 3.45833 9.91667 3.45833C13.4835 3.45833 16.375 6.34983 16.375 9.91667C16.375 13.4835 13.4835 16.375 9.91667 16.375C6.34983 16.375 3.45833 13.4835 3.45833 9.91667Z" fill="#CC2D4A"/>
+                </svg>
+                <svg width="30" height="30" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path class="dark:text-white dark:fill-current" d="M15.293 11.293C13.8115 11.9631 12.161 12.1659 10.5614 11.8743C8.96173 11.5827 7.48893 10.8106 6.33918 9.66082C5.18943 8.51107 4.41732 7.03827 4.12573 5.43863C3.83413 3.839 4.03689 2.18849 4.707 0.707001C3.52756 1.24001 2.49503 2.0512 1.698 3.07096C0.900971 4.09072 0.363229 5.28862 0.130909 6.56189C-0.101411 7.83515 -0.0213717 9.14577 0.364159 10.3813C0.749689 11.6168 1.4292 12.7404 2.3444 13.6556C3.2596 14.5708 4.38316 15.2503 5.61869 15.6358C6.85423 16.0214 8.16485 16.1014 9.43811 15.8691C10.7114 15.6368 11.9093 15.099 12.929 14.302C13.9488 13.505 14.76 12.4724 15.293 11.293Z" fill="#CC2D4A"/>
+                    </svg>
+                    <svg width="25" height="27" viewBox="0 0 25 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path class="dark:text-white dark:fill-current" fill-rule="evenodd" clip-rule="evenodd" d="M2.78225 17.6464C4.4799 15.2799 7.48651 13.4999 12.4999 13.4999C17.5132 13.4999 20.5199 15.2799 22.2175 17.6464C23.8582 19.9336 24.1196 22.5552 24.1248 24.0058C24.13 25.4645 22.9071 26.4166 21.6533 26.4166H3.34642C2.09262 26.4166 0.869709 25.4645 0.874956 24.0058C0.880174 22.5552 1.1415 19.9336 2.78225 17.6464Z" fill="gray"/>
+                        <path class="dark:text-white dark:fill-current" fill-rule="evenodd" clip-rule="evenodd" d="M12.5 10.9166C15.3535 10.9166 17.6667 8.60339 17.6667 5.74992C17.6667 2.89645 15.3535 0.583252 12.5 0.583252C9.64653 0.583252 7.33334 2.89645 7.33334 5.74992C7.33334 8.60339 9.64653 10.9166 12.5 10.9166Z" fill="gray"/>
+                        </svg>
+        </div>
+    </nav>
+    <section class="w-full h-auto">
+        <div id="home">
+            <div class="w-full h-auto">
+                <div class="w-full h-full flex flex-col absolute space-y-72 p-6 items-center lg:items-start lg:space-y-16">
+                    <input type="search" class="w-9/12 outline-none p-3 rounded-full shadow-sm transition duration-300 focus-within:shadow-sm focus:ring-2 focus:w-11/12 lg:hidden" placeholder="San Francisco">
+                    <div class="hidden lg:h-auto w-2/5 lg:flex pb-6">
+                        <p class="text-4xl ml-16 font-bol">Encuentra mas ubicaciones como esta</p>
+                    </div>
+                    <button class="w-48 h-12 text-x1 text-center text-primary font-semibold p-2 bg-white rounded-full shadow-sm  transition-all duration-500 ease-in-out hover:bg-primary hover:text-white transform hover:-translate-y-1 hover:scale-110 lg:w-80 lg:self-center">Explorar</button>
+                </div>
+                <div class="w-full h-full lg:h-96 bg-sanFranciscoDesktop bg-cover bg-center">
+                    <img class="lg:hidden" src="./img/sanFrancisco.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <div id="recomendados" class="p-6">
+            <p class="section-title">Nuestras Recomendados</p>
+            <div class="w-auto h-72 items-center mt-6 flex flex-row overflow-x-auto space-x-6">
+                <div class="Card">
+                    <div class="w-full h-3/5 rounded-t-lg bg-norway bg-cover bg-center bg-no-repeat"></div>
+                    <div class="w-full h-2/5 bg-secondary rounded-b-lg shadow-xl dark:bg-gray-700">
+                        <p class="text-white text-lg text-bold px-4 py-2 lg:text-xl">Noruega</p>
+                        <p class="text-white text-base px-4 my-2 lg:text-lg">Paisajes hermosos</p>
+                    </div>                    
+                </div>
+                <div class="Card">
+                    <div class="w-full h-3/5 rounded-t-lg bg-new_york bg-cover bg-center bg-no-repeat"></div>
+                    <div class="w-full h-2/5 bg-white rounded-b-lg shadow-xl dark:bg-gray-800">
+                        <p class="text-tertiary text-lg text-bold px-4 py-2 lg:text-xl dark:text-white">New York</p>
+                        <p class="text-tertiary text-base px-4 my-2 lg:text-lg dark:text-white">La junga de concreto</p>
+                    </div>                    
+                </div>
+                <div class="Card">
+                    <div class="w-full h-3/5 rounded-t-lg bg-yosemite bg-cover bg-center bg-no-repeat"></div>
+                    <div class="w-full h-2/5 bg-secondary rounded-b-lg shadow-xl dark:bg-gray-700">
+                        <p class="text-white text-lg text-bold px-4 py-2 lg:text-xl">Yosemite</p>
+                        <p class="text-white text-base px-4 my-2 lg:text-lg">Un descanso del mundo</p>
+                    </div>                    
+                </div>
+                <div class="Card">
+                    <div class="w-full h-3/5 rounded-t-lg bg-seattle bg-cover bg-center bg-no-repeat"></div>
+                    <div class="w-full h-2/5 bg-white rounded-b-lg shadow-xl dark:bg-gray-800">
+                        <p class="text-tertiary text-lg text-bold px-4 py-2 lg:text-xl dark:text-white">Seattle</p>
+                        <p class="text-tertiary text-base px-4 my-2 lg:text-lg dark:text-white">La gran ciudad</p>
+                    </div>                    
+                </div>
+                <div class="Card">
+                    <div class="w-full h-3/5 rounded-t-lg bg-switzerland bg-cover bg-center bg-no-repeat"></div>
+                    <div class="w-full h-2/5 bg-secondary rounded-b-lg shadow-xl dark:bg-gray-700">
+                        <p class="text-white text-lg text-bold px-4 py-2 lg:text-xl">Switzerland</p>
+                        <p class="text-white text-base px-4 my-2 lg:text-lg">Gran ciudad</p>
+                    </div>                    
+                </div>
+            </div>
+        </div>
+        <div class="px-6 h-full w-full" id="rentas_destacadas">
+            <p class="section-title">Rentas destacadas</p>
+            <div class="w-full h-auto flex flex-col space-y-8 items-center justify-center lg:grid grid-cols-5 grid-rows-6 gap-2">
+                <div class="w-full h-96 bg-chicago bg-cover bg-center bg-norepeat rounded-3xl p-8 lg:col-span-5 row-span-2">
+                    <p class="card-title">Chicago</p>
+                    <p class="card-info">2 habitaciones, baño y cocina</p>
+                </div>
+                <div class="w-full h-96 bg-LA bg-cover bg-center bg-norepeat rounded-3xl p-8 lg:col-span-2 row-span-4 bg-origin-padding">
+                    <p class="card-title lg:text-white">Los Angeles</p>
+                    <p class="card-info lg:text-white">4 habitaciones, 3 baños, cocina y alberca privada</p>
+                </div>
+                <div class="w-full h-96 bg-miami bg-cover bg-center bg-norepeat rounded-3xl p-8 col-span-3 row-span-2">
+                    <p class="card-title">Miami</p>
+                    <p class="card-info">3 habitaciones, 2 baños, cocina y vista al mar.</p>
+                </div>
+                <div class="w-full h-96 bg-bali bg-cover bg-center bg-norepeat rounded-3xl p-8 lg:col-span-3 row-span-2">
+                    <p class="card-title text-right lg:text-white">Balí</p>
+                    <p class="card-info text-right lg:text-white">2 habitaciones, 2 baños, cocina y alberca privada</p>
+                </div>
+            </div>
+        </div>
+        <div class="w-full h-96 mt-8 p-6" id="faqs">
+            <div>
+                <p class="section-title">FAQS</p>
+            </div>
+            <div>
+                <p class="asked">Política de cancelación</p>
+                <p class="text-sm my-4 dark:text-gray-300">Cancelaciones gratis 4 días antes de la fecha de su reserva</p>
+            </div>
+            <div>
+                <p class="asked">Metodos de pago</p>
+                <p class="text-sm my-4 dark:text-gray-300">Aceptamos Visa, MasterCard, American Express, PayPal y Binance</p>
+            </div>
+            <div>
+                <p class="asked">Estancias largas</p>
+                <p class="text-sm my-4 dark:text-gray-300">Se admiten estancías de mas de 28 días, sujeto a disponibilidad</p>
+            </div>
+        </div>
+    </section>
+    <footer class="w-full h-auto bg-gray-50 p-6 space-y-2 dark:bg-gray-900">
+        <p class="text-lg text-gray-300">Acerca de</p>
+        <p class="text-sm text-gray-300">Inversionistas</p>
+        <p class="text-sm text-gray-300">Empleos</p>
+        <p class="text-sm text-gray-300">Terminos y condiciones</p>
+        <p class="text-sm text-gray-300">Platzi Travel, Inc.</p>
+    </footer>
+    <div class="w-full h-16 px-8 bg-white fixed left-0 bottom-0 shadow-md flex space-x-4 justify-evenly items-center lg:hidden dark:bg-gray-700" id="tab_bar">
+        <a href="#home">
+            <svg width="30" height="30" viewBox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="dark:text-gray-300 dark:fill-current" d="M15.0159 1.03837C14.7669 0.754514 14.4034 0.588657 14.0189 0.583382C13.6344 0.578106 13.2662 0.733927 13.009 1.01084L1.00896 13.9275C0.656721 14.3067 0.567802 14.8511 0.782022 15.3171C0.996242 15.7831 1.47347 16.0833 2.00002 16.0833H4.66669V23.8333C4.66669 24.5466 5.26364 25.1249 6.00002 25.1249H11.3334V18.6666H16.6667V25.1249H22C22.7364 25.1249 23.3334 24.5466 23.3334 23.8333V16.0833H25.3334C25.8531 16.0833 26.3254 15.7907 26.5436 15.3337C26.7617 14.8768 26.6859 14.3387 26.3493 13.955L15.0159 1.03837Z" fill="gray"/>
+                </svg>
+        </a>
+        <a  href="#rentas_destacadas">
+            <svg width="30" height="30" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="dark:text-gray-300 dark:fill-current" fill-rule="evenodd" clip-rule="evenodd" d="M9.91667 0.875C4.92309 0.875 0.875 4.92309 0.875 9.91667C0.875 14.9102 4.92309 18.9583 9.91667 18.9583C11.9476 18.9583 13.8221 18.2887 15.3316 17.1582L20.6284 22.4551C21.1328 22.9595 21.9507 22.9595 22.4551 22.4551C22.9595 21.9507 22.9595 21.1328 22.4551 20.6284L17.1582 15.3316C18.2887 13.8221 18.9583 11.9476 18.9583 9.91667C18.9583 4.92309 14.9102 0.875 9.91667 0.875ZM3.45833 9.91667C3.45833 6.34983 6.34983 3.45833 9.91667 3.45833C13.4835 3.45833 16.375 6.34983 16.375 9.91667C16.375 13.4835 13.4835 16.375 9.91667 16.375C6.34983 16.375 3.45833 13.4835 3.45833 9.91667Z" fill="#CC2D4A"/>
+                </svg>
+        </a>
+        <a href="#recomendados">
+            <svg width="30" height="30" viewBox="0 0 27 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="dark:text-gray-300 dark:fill-current" d="M6.88589 1.1598C9.69627 0.457033 11.5415 1.33633 12.6651 2.45988C12.7875 2.58226 12.9006 2.7068 13.0051 2.83153C13.1278 2.97802 13.3091 3.06265 13.5002 3.06265C13.6913 3.06265 13.8726 2.97802 13.9953 2.83153C14.0998 2.70679 14.2129 2.58225 14.3353 2.45988C15.4589 1.33629 17.3043 0.457053 20.1153 1.1598C22.9229 1.86173 25.0419 3.97284 25.7491 6.62517C26.461 9.29528 25.7249 12.433 22.9982 15.1597C19.9813 18.1766 17.4061 20.7531 15.7854 22.3748C14.5244 23.6366 12.4827 23.6372 11.2211 22.3759L4.00388 15.1597C1.27608 12.4324 0.539973 9.29459 1.25217 6.62457C1.9596 3.9724 4.07894 1.86172 6.88589 1.1598Z" fill="gray"/>
+                </svg>
+        </a>
+        <a href="">
+            <svg width="25" height="27" viewBox="0 0 25 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="dark:text-gray-300 dark:fill-current" fill-rule="evenodd" clip-rule="evenodd" d="M2.78225 17.6464C4.4799 15.2799 7.48651 13.4999 12.4999 13.4999C17.5132 13.4999 20.5199 15.2799 22.2175 17.6464C23.8582 19.9336 24.1196 22.5552 24.1248 24.0058C24.13 25.4645 22.9071 26.4166 21.6533 26.4166H3.34642C2.09262 26.4166 0.869709 25.4645 0.874956 24.0058C0.880174 22.5552 1.1415 19.9336 2.78225 17.6464Z" fill="gray"/>
+                <path class="dark:text-gray-300 dark:fill-current" fill-rule="evenodd" clip-rule="evenodd" d="M12.5 10.9166C15.3535 10.9166 17.6667 8.60339 17.6667 5.74992C17.6667 2.89645 15.3535 0.583252 12.5 0.583252C9.64653 0.583252 7.33334 2.89645 7.33334 5.74992C7.33334 8.60339 9.64653 10.9166 12.5 10.9166Z" fill="gray"/>
+                </svg>
+        </a>
+        <button>
+            <svg width="30" height="30" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="dark:text-gray-300 dark:fill-current" d="M15.293 11.293C13.8115 11.9631 12.161 12.1659 10.5614 11.8743C8.96173 11.5827 7.48893 10.8106 6.33918 9.66082C5.18943 8.51107 4.41732 7.03827 4.12573 5.43863C3.83413 3.839 4.03689 2.18849 4.707 0.707001C3.52756 1.24001 2.49503 2.0512 1.698 3.07096C0.900971 4.09072 0.363229 5.28862 0.130909 6.56189C-0.101411 7.83515 -0.0213717 9.14577 0.364159 10.3813C0.749689 11.6168 1.4292 12.7404 2.3444 13.6556C3.2596 14.5708 4.38316 15.2503 5.61869 15.6358C6.85423 16.0214 8.16485 16.1014 9.43811 15.8691C10.7114 15.6368 11.9093 15.099 12.929 14.302C13.9488 13.505 14.76 12.4724 15.293 11.293Z" fill="gray"/>
+                </svg>
+        </button>
+    </div>
+</html>

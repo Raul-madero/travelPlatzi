@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.section-title {
+    @apply text-xl text-primary font-semibold lg:text-2xl dark:text-white
+}
+
+.Card {
+    @apply w-48 h-64 shadow-md rounded-lg shrink-0 transform transition-all hover:-translate-y-4 hover:shadow-2xl lg:w-60 h-72;
+}
+
+.card-title {
+    @apply text-lg font-semibold text-white lg:text-xl lg:text-black dark:text-white
+}
+
+.card-info {
+    @apply text-sm font-light text-white mt-8 lg:text-base lg:text-black dark:text-white
+}
+
+.asked {
+    @apply text-base font-semibold text-primary my-4 lg:text-lg dark:text-white
+}
